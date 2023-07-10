@@ -1,0 +1,416 @@
+ html, body{
+    background-color: #DBA5C9;
+   margin: 0px ;
+   width: 100%;
+   height: 100%;
+   padding: 0px;
+   overflow-x: hidden;
+} 
+
+.display-5{
+  font-family: 'Tangerine', cursive;
+}
+
+.bg{
+    /* background-color: #7F669D;
+    margin-top: 0%;
+    border: 0; */
+
+    background-image: url(pexels-codioful-\(formerly-gradienta\)-7130564.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    viewport-fit: 100%; 
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.ul{
+    text-align: right;
+}
+
+.nav{
+    margin-left: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  color:#FBFACD;
+}
+
+
+
+.fs-2, .pb-2{
+  text-align: center;
+}
+.bg1{
+    background-color: #7F669D;
+    margin-top: 0%;
+    border: 0;
+}
+.img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#ed-icon{
+    height: 50px;
+    width: 50px;
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  text-align: justify;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col{
+  width: calc(100%/3);
+  text-align: center;
+  margin: 5px;
+ 
+}
+#s1,#s2, #coll{
+  display: none; 
+  text-align: center;
+  /* position: relative; */
+}
+
+#s1.active,#s2.active, #coll.active{
+  display: block;
+}
+
+.dark{
+    background-color:#291A49;
+    margin: 0;
+    padding: 0;
+}
+
+#skills ul{
+  display: flex;
+  font-size: 20px;
+  /* list-style: none; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.u{
+  padding: 0;
+ 
+}
+.l{
+width: 30%;
+} 
+
+/* The animation code */
+@keyframes example {
+    from {background-color:#BA94D1;}
+    to {background-color: #7F669D;}
+  }
+  
+  /* The element to apply the animation to */
+  .animate {
+    width: 100px;
+    height: 100px;
+    background-color:#7F669D;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .Projects{
+    text-align: left;
+  }
+
+  .text{
+    color: #FBFACD;
+  }
+  .text1{
+    color:#FBFACD;
+    font-family: 'Baloo Chettan 2', cursive;
+  }
+
+  .ed{
+    /* margin: 50px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature{
+    display: inline-block;
+  }
+
+  /*Education*/
+
+  .lead{
+    text-align: justify;
+}
+
+.main-timeline {
+    position: relative;
+    align-self: center;
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background:  #FBFACD;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.main-timeline .timeline {
+    margin-bottom: 40px;
+    position: relative
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .icon:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -3px
+}
+
+.main-timeline .icon:after {
+    border: 2px solid  #FBFACD;
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:before {
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -3px
+}
+
+.main-timeline .date-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative
+}
+
+.main-timeline .date-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: #FBFACD;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0
+}
+
+.main-timeline .date-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .date-outer:before {
+    background: #FBFACD;
+    border: 2px solid #232323;
+    left: -6px
+}
+
+.main-timeline .date-outer:after {
+    border: 2px solid  #FBFACD;
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:after {
+    left: -6px
+}
+
+.main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 0
+}
+
+.main-timeline .month {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.main-timeline .year {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #232323;
+    line-height: 36px
+}
+
+.main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right
+}
+
+.main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0
+}
+
+.main-timeline .description {
+    margin-bottom: 0
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: right
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px
+    }
+    .main-timeline .title {
+        font-size: 17px
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .main-timeline .date-content:before {
+        display: none
+    }
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date {
+        top: 30%
+    }
+    .main-timeline .year {
+        font-size: 24px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }
+}
